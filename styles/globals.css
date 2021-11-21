@@ -6,11 +6,73 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+input {
+  font-size: 1rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
-
+/* 
 * {
   box-sizing: border-box;
+} */
+
+button, a {
+  display: block;
+  border: none;
+  color: #A0C1FF;
+  background-color: #fff;
+}
+button:focus, button:hover, a:hover, a:focus {
+  color: #918CFF;
+}
+button.selected {
+  border-right: solid 0.24em;
+  color: #918CFF;
+}
+input {
+  max-width: 100%;
+}
+#menu-bar {
+  place-self: start;
+  min-height: 100%;
+}
+#menu-bar > button {
+  grid-column: 1 / 2;
+}
+#menu-bar > div {
+  grid-column: 2 / 3;
+  grid-row: 1 / 9;
+  background-color: rgb(150, 255, 255);
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  min-width: min-content;
+}
+/* .cropper-container, .cropper-container > div, .cropper-container > img {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+} */
+.Preview--container {
+  width: 100%;
+
+}
+.Preview--container > span {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.Preview--container .preview, .preview--container img {
+  object-fit: contain;
+  width: 100%;
+  position: relative !important;
+  height: auto !important;
+}
+.buttons {
+  display: flex;
+  
 }
