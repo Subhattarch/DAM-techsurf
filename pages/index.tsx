@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import DAM from './Components/_DAM'
-import UseState from "./Components/_UseState";
-import AddTemplate from "./Components/_addTemplate";
-import { DataToSave } from "./Components/_types";
+import DAM from './../Components/_DAM'
+import UseState from "./../Components/_UseState";
+import AddTemplate from "./../Components/_addTemplate";
+import { DataToSave } from "./../Components/_types";
 
 const Home: NextPage = () => {
     const [image, setImage] = UseState<string>("")
