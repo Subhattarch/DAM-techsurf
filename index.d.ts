@@ -127,7 +127,7 @@ interface JQuery {
 // note this declare module is necessary to tell TypeScript not to interpret the whole file as one module;
 // the JQuery interface below should extend the existing jquery module interface
 
-// declare module "jcanvas" {
-//     function jcanvas(jquery: JQueryStatic, window: Window): void;
-//     export = jcanvas;
-// }
+declare module "jcanvas" {
+    function jcanvas(jquery: JQueryStatic, window: Window): void;
+    export = jcanvas;
+}

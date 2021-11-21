@@ -23,6 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "index.d.ts"
   ],
   "paths": {
     "*": ["*"]
