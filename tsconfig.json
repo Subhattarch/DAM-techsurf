@@ -25,9 +25,10 @@
     "**/*.tsx"
   ],
   "paths": {
-    "*": ["*.d.ts"]
+    "*": ["*"]
 },
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "typeRoots": ["./"]
 }
